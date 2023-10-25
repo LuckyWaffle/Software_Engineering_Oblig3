@@ -5,3 +5,5 @@ def isLeapYear(year):
         return False
     elif year % 4 == 0:
         return True
+
+# dette er en endring i filen.

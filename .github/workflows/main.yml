@@ -1,0 +1,16 @@
+name: run-test
+on: [push]
+
+jobs:
+  unit-testing:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: install Packages
+        run: pip install pytest
+
+      - name: Run tests
+        run: pytest oblig2_test.py
+    
